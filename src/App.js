@@ -15,7 +15,7 @@ const App = () => {
     setInput("");
 
     try {
-      const response = await axios.post("http://localhost:5000/api/chat", {
+      const response = await axios.post("https://propbot-backend.onrender.com/api/chat", {
         message: trimmedInput,
       });
 
